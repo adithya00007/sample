@@ -1,0 +1,98 @@
+
+
+1)	Total number of bits available and why it is limited:
+There are about 65,535 ports per IP address: this is the highest number that can be represented by a 16-bit, or 2-byte it wasn't conceivable that computers would ever be able to spare more than that for something as trivial as ports, or something like that.
+2)	Ipv4 and Ipv6 
+Ipv4 and ipv6 are the versions to provide the proper information and identification for each ip addresses as there are large number of ip addresses in current period.
+Ipv4 addresses:
+* The first version of an ip address that was in format of 2^ 32 bits of tots kip address in ipv4 form .it was sufficient at initial phase .but in current advancement the addresses in ip ranges from 0 to 225 with 4 octets each is separated by a period. In a ip address first 3 parts are network id and last part Is host id .  using ipv4 addresses as reference we can identify ipv4 addresses from ipv6 addresses
+* Ip classes are designed to provide easier management of large number of ip address .there are 5 classes depending on class size named a,b,c,d,e. 
+* First part a accommodates network with large number of networks first part ranging from 0 to 127
+* Next part can fulfil the requirement for a moderated number of network host ranges from 128 to 191
+* Part c can allocate ip address for low number of  network id .the first 3 bits of network id is 1 1 0. Ranging from 192 to 223. So for above 3 part we can easily assign and identify network host.
+* Part d is used for multicasting to send multiple signals at same time from a single host.for example in a video  streaming the lead bit is 1 1 1 0 with network id ranges from 224 to 239 
+* Class e has ip bits reserved for research purpose only where ip address ranges from 240 to 255 
+* For Ipv4 the memory  required for storing ipv4 version addresses in a system is very low they apply connection less protocol for sharing data and providing best effort in delivery
+Ipv6 addresses:
+* It was designed to overcome the address demand which to apply 128- bit binary type format.
+* Approximately 320 civilian ip address were satisfied under ipv6
+* This type of ip addresses were designed of 4 hexadecimal digit and 8 sets with each block contains 16 bits
+* Ipv 6 addresses provides integrated security for network that is internet sequirity protocol(ipsec).
+* It allows its application to extend in various services according to the need of the  network
+* It also  allows address config that uses dhcp network for setting and stateless that applies auto config settings.
+* It also allows some methods to convert ipv4 address to ipv6 addresses.
+3)	Ip addressing schemes :
+* IP address stands for internet protocol address; it is an identifying number that is associated with a specific computer or computer network. When connected to the internet, the IP address allows the computers to send and receive information.
+* Ip addressing is a requirement for communication in a computer network with an addressing scheme ,packets are forwarded from one location to another.
+* The scheme consist of two special cases of ip address addresses and loopback addresses and three layer address are used for routing , switching, creating of path.
+Class A:
+* In this class out of 32 bits only first 8 bits are assigned to the network part, hence it has default subnet mask of 255.0.0.0. In this class the first bit is reserved and is always kept off.
+* Lower range can be found out by keeping all the bits off (means the corresponding numerical value is not added)
+*  the IP range of this class should be 0-127 but 0.0.0.0 doesn’t represent a valid network and 127.0.0.0 to 127.255.255.255 is reserved for local host loop back to verify TCP/IP services. Eg: Some examples are 10.x.x.x, 125.x.x.x, 79.x.x.x, 98.x.x.x etc.
+class B:
+* in this class first 16 bits are assigned to network part & so it has default subnet mask of 255.255.0.0. For range assignment first two bits are reserved, first bit always on and second bit always off.
+* Its lower range is 128 as last six bits and Its higher range is 191 as last six bits So the range of class B is 128-191. Some examples are 130.x.x.x, 156.x.x.x, 178.x.x.x, 190.x.x.x.
+   Class C:
+* This class has 24 bits for network part and so its default subnet mask is 255.255.255.0. To assign the range first 3 bits are reserved, 1 & 2 bits are always on and 3 bit is always off.
+* Its lower range is 192 as last five bits are off.
+* So the class C range is 192-223. Some examples are 200.x.x.x, 215.x.x.x, 221.x.x.x, 195.x.x.x.
+   Class D:
+* The range of this class is from 224-239 and can’t be allocated to hosts. This class is used for multicasting by various routing protocols. Some common examples are
+* 224.0.0.5-Used by all OSPF routers
+* 224.0.0.6-Used by OSPF DRs (Designated Routers)
+* 224.0.0.9-Used by RIP-2
+* 224.0.0.10-Used by EIGRP
+* 224.0.0.12-Used by DHCP Server/Relay Agent
+* 224.0.0.14-Used by RSVP encapsulation
+* 224.0.0.18-Used by VRRP
+* 224.0.0.22-Used by IGMP
+   Class E:
+* The range of this class is from 240-255 and is not meant for general use. These are typically used for experiments.
+4)	Reserved ports:
+* Port numbers range from 0 to 65535, but only port numbers 0 to 1023 are reserved for privileged services and designated as well-known ports. The following list of well-known port numbers specifies the port used by the server process as its contact port.
+1. 1- tcp port service multiplexer
+2. 5- remote job entry
+3. 7- echo
+4. 18- message send protocol
+5. 20- ftp data
+6. 21- ftp control
+7. 22- ssh remote login protocol
+8. 23- telnet
+9. 25- Simple mail transfer protocol
+10. 29- Msg icp
+11. 37- time
+12. 42- host name server
+13. 43- whols
+14. 49- login host protocol
+15. 53- domain name system
+16. 69- tvft
+17. 70- gopher server
+18. 79- finger
+19. 80- http
+20. 103- x.400 standard
+21. 108- sna gateway
+22. 109- pop2
+23. 110- pop3
+24. 115- simple file transfer protocol
+25. 118- sql service
+26. 119- news group
+27. 137- netbios name service
+28. 139- netbios datagram service
+29. 143- interim mail access protocol
+30. 150- netbios session service
+31. 156- sql server
+32. 161- snmp
+33. 179- border gatewap protocol
+34. 190- gateway access control protocol
+35. 194- internet rely chat
+36. 197- dls
+37. 389- lightweight direct access protocol
+38. 396- novel netware ip
+39. 443- https
+40. 444- snpp
+41. 445- Microsoft ds
+42. 458- apple quick time
+43. 546- dhcp client
+44. 547- dhcp server
+45. 563- snews
+46. 1080- socks
